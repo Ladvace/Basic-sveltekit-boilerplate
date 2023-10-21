@@ -67,6 +67,9 @@ devDependencies:
   prettier-plugin-svelte:
     specifier: ^2.10.1
     version: 2.10.1(prettier@2.8.8)(svelte@4.2.2)
+  prisma:
+    specifier: ^5.4.2
+    version: 5.4.2
   svelte:
     specifier: ^4.0.5
     version: 4.2.2
@@ -536,6 +539,11 @@ packages:
 
   /@polka/url@1.0.0-next.23:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
+    dev: true
+
+  /@prisma/engines@5.4.2:
+    resolution: {integrity: sha512-fqeucJ3LH0e1eyFdT0zRx+oETLancu5+n4lhiYECyEz6H2RDskPJHJYHkVc0LhkU4Uv7fuEnppKU3nVKNzMh8g==}
+    requiresBuild: true
     dev: true
 
   /@rollup/pluginutils@5.0.5:
@@ -2224,6 +2232,15 @@ packages:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.2.0
+    dev: true
+
+  /prisma@5.4.2:
+    resolution: {integrity: sha512-GDMZwZy7mysB2oXU+angQqJ90iaPFdD0rHaZNkn+dio5NRkGLmMqmXs31//tg/qXT3iB0cTQwnGGQNuirhSTZg==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 5.4.2
     dev: true
 
   /punycode@2.3.0:
